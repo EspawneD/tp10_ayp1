@@ -5,5 +5,9 @@ public class Moto extends Vehiculo {
 		super(patente, motor, color, marca, velMax, cantRuedas);
 		this.cilindrada = cilindrada;
 	}
+	@Override
+	public String descripcion(){
+		return super.descripcion() + "\nCilindrada: " + cilindrada;
+	}
 }
 

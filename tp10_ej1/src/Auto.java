@@ -5,5 +5,9 @@ public class Auto extends Vehiculo{
 		super(patente, motor, color, marca, velMax, cantRuedas);
 		this.cantPuertas = cantPuertas;
 	}
+	@Override
+	public String descripcion(){
+		return super.descripcion() + "\nCantidad de puertas: " + cantPuertas;
+	}
 }
 
